@@ -19,7 +19,7 @@ namespace VSCodeWebAPIJwtSecurity.Controllers
             {
                 return Ok(new { Success = true, token = GenerateToken(model.Email) });
             }
-            return Ok(new { Success = false, Message = "Ivalid email/password" });
+            return Ok(new { Success = false, Message = "Invalid email/password" });
         }
 
         private string GenerateToken(string email)
